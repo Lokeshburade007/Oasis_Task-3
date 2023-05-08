@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Online Temperature Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="calTemp">
+            <h4>Enter the Temperature</h4>
+            <div class="inputvale">
+                <input type="number" name="temp" id="temp" placeholder="Enter temp.."
+                    oninput="calTemp(); return false">
+                <select name="temp_diff" id="temp_diff">
+                    <option value="cel"> Celsius</option>
+                    <option value="fah"> Fahrenheit</option>
+                </select>
+            </div>
+            <span id="resultbox"></span>
+        </form>
+        <div class="textheading">
+            <h1>Online Temperature Converter</h1><br>
+            <div>Covert <span class="auto-input"></span></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
